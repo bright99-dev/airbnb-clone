@@ -74,8 +74,6 @@ const Modal: React.FC<ModalProps> = ({
           justify-center 
           items-center 
           flex 
-          overflow-x-hidden 
-          overflow-y-auto 
           fixed 
           inset-0 
           z-50 
@@ -90,11 +88,12 @@ const Modal: React.FC<ModalProps> = ({
           md:w-4/6
           lg:w-3/6
           xl:w-2/5
-          my-6
           mx-auto 
           h-full 
-          lg:h-auto
-          md:h-auto
+          md:h-[90%]
+          my-auto
+          overflow-x-hidden   
+          overflow-y-auto 
           "
         >
           {/*content*/}
@@ -126,7 +125,7 @@ const Modal: React.FC<ModalProps> = ({
               <div className="
                 flex 
                 items-center 
-                p-6
+                p-4
                 rounded-t
                 justify-center
                 relative
